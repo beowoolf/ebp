@@ -3,8 +3,8 @@ package pl.engineerbookplus.www.model.domain.repository.jpa;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 import pl.engineerbookplus.www.model.domain.Person;
-import pl.engineerbookplus.www.model.repository.jpa.AbstractRepositoryByJPA;
 import pl.engineerbookplus.www.model.domain.repository.PersonsRepository;
+import pl.engineerbookplus.www.model.repository.jpa.AbstractRepositoryByJPA;
 
 import javax.persistence.NoResultException;
 import java.util.List;

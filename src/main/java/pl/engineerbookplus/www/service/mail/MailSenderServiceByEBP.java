@@ -3,8 +3,6 @@ package pl.engineerbookplus.www.service.mail;
 import org.springframework.core.io.UrlResource;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
-import pl.engineerbookplus.www.service.mail.AbstractMailSenderService;
-import pl.engineerbookplus.www.service.mail.MailSenderService;
 
 import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;

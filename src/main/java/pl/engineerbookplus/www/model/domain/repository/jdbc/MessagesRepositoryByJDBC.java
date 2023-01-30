@@ -4,11 +4,11 @@ import org.springframework.stereotype.Repository;
 import pl.engineerbookplus.www.model.domain.Message;
 import pl.engineerbookplus.www.model.domain.Person;
 import pl.engineerbookplus.www.model.domain.processor.MessageProcessor;
-import pl.engineerbookplus.www.model.processor.Processor;
 import pl.engineerbookplus.www.model.domain.repository.MessagesRepository;
-import pl.engineerbookplus.www.model.repository.jdbc.AbstractRepositoryByJDBC;
 import pl.engineerbookplus.www.model.domain.wizard.AddMessagePreparedStatementWizard;
 import pl.engineerbookplus.www.model.domain.wizard.EditMessagePreparedStatementWizard;
+import pl.engineerbookplus.www.model.processor.Processor;
+import pl.engineerbookplus.www.model.repository.jdbc.AbstractRepositoryByJDBC;
 import pl.engineerbookplus.www.model.wizard.PreparedStatementWizard;
 
 import java.util.List;

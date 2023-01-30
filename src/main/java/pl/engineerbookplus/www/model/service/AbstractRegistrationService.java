@@ -30,8 +30,8 @@ public abstract class AbstractRegistrationService {
 
     protected ModelAndView getSendMailView(Person person, String password) {
         if (mailSenderService.sendPasswordForRegistration(person.getMail(), password))
-            return  new ModelAndView("registered", "person", person);
-        return  new ModelAndView("index", "message", "Wysłanie wiadomości e-mail nie powiodło się! Skontaktuj się z administratorem strony! <br />" + person.toString());
+            return new ModelAndView("registered", "person", person);
+        return new ModelAndView("index", "message", "Wysłanie wiadomości e-mail nie powiodło się! Skontaktuj się z administratorem strony! <br />" + person.toString());
     }
 
 }

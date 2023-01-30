@@ -8,8 +8,8 @@ import pl.engineerbookplus.www.model.domain.repository.MessagesRepository;
 import pl.engineerbookplus.www.model.domain.repository.spring.mapper.MessageMapper;
 import pl.engineerbookplus.www.model.domain.wizard.AddMessagePreparedStatementWizard;
 import pl.engineerbookplus.www.model.domain.wizard.EditMessagePreparedStatementWizard;
-import pl.engineerbookplus.www.model.wizard.PreparedStatementWizard;
 import pl.engineerbookplus.www.model.repository.spring.AbstractRepositoryBySpring;
+import pl.engineerbookplus.www.model.wizard.PreparedStatementWizard;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

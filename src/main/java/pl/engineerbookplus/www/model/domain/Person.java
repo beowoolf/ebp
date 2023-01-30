@@ -1,27 +1,5 @@
 package pl.engineerbookplus.www.model.domain;
 
-import java.io.Serializable;
-import java.util.Collection;
-import java.util.Date;
-import javax.persistence.Basic;
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.NamedQueries;
-import javax.persistence.NamedQuery;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
-import javax.persistence.Transient;
-import javax.persistence.UniqueConstraint;
-import javax.xml.bind.annotation.XmlRootElement;
-
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -29,6 +7,12 @@ import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.format.annotation.DateTimeFormat;
+
+import javax.persistence.*;
+import javax.xml.bind.annotation.XmlRootElement;
+import java.io.Serializable;
+import java.util.Collection;
+import java.util.Date;
 
 @Getter
 @Setter
@@ -95,7 +79,7 @@ public class Person implements Serializable {
     @Basic(optional = false)
     @Column(nullable = false)
     @Temporal(TemporalType.DATE)
-    @DateTimeFormat(pattern="dd.MM.yyyy")
+    @DateTimeFormat(pattern = "dd.MM.yyyy")
     private Date birthday;
     @Basic(optional = false)
     @Column(nullable = false)
@@ -165,8 +149,8 @@ public class Person implements Serializable {
                 + "Nazwisko: " + surname + "<br />"
                 + "Nazwa użytkownika: " + username + "<br />"
                 + "Adres e-mail: " + mail + "<br />"
-                + "Data urodzenia: " + birthday.getDate() + "." + (birthday.getMonth()+1) + "." + (birthday.getYear()+1900) + "<br />"
-                + "Płeć: " + (maleGender?"mężczyzna":"kobieta") + "<br />"
+                + "Data urodzenia: " + birthday.getDate() + "." + (birthday.getMonth() + 1) + "." + (birthday.getYear() + 1900) + "<br />"
+                + "Płeć: " + (maleGender ? "mężczyzna" : "kobieta") + "<br />"
                 + "<br />Hasło do Twojego konta zostało wysłane na adres podany w formularzu rejestracyjnym.<br />"
                 + "Sprawdź pocztę i użyj hasła wysłanego na adres podany w formularzu rejestracyjnym w formularzu poniżej, aby aktywować konto i móc się na nie logować.<br />";
     }

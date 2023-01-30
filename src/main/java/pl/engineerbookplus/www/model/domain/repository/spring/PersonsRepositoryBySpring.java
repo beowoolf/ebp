@@ -8,8 +8,8 @@ import pl.engineerbookplus.www.model.domain.repository.spring.extractor.PersonEx
 import pl.engineerbookplus.www.model.domain.repository.spring.mapper.PersonMapper;
 import pl.engineerbookplus.www.model.domain.wizard.AddPersonPreparedStatementWizard;
 import pl.engineerbookplus.www.model.domain.wizard.EditPersonPreparedStatementWizard;
-import pl.engineerbookplus.www.model.wizard.PreparedStatementWizard;
 import pl.engineerbookplus.www.model.repository.spring.AbstractRepositoryBySpring;
+import pl.engineerbookplus.www.model.wizard.PreparedStatementWizard;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

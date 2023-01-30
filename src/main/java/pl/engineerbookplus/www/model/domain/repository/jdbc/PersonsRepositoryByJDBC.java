@@ -3,11 +3,11 @@ package pl.engineerbookplus.www.model.domain.repository.jdbc;
 import org.springframework.stereotype.Repository;
 import pl.engineerbookplus.www.model.domain.Person;
 import pl.engineerbookplus.www.model.domain.processor.PersonProcessor;
-import pl.engineerbookplus.www.model.processor.Processor;
 import pl.engineerbookplus.www.model.domain.repository.PersonsRepository;
-import pl.engineerbookplus.www.model.repository.jdbc.AbstractRepositoryByJDBC;
 import pl.engineerbookplus.www.model.domain.wizard.AddPersonPreparedStatementWizard;
 import pl.engineerbookplus.www.model.domain.wizard.EditPersonPreparedStatementWizard;
+import pl.engineerbookplus.www.model.processor.Processor;
+import pl.engineerbookplus.www.model.repository.jdbc.AbstractRepositoryByJDBC;
 import pl.engineerbookplus.www.model.wizard.PreparedStatementWizard;
 
 import java.util.List;
