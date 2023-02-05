@@ -1,4 +1,4 @@
-package pl.engineerbookplus.www.model.service;
+package pl.engineerbookplus.www.model.service.registration;
 
 import org.apache.commons.lang.RandomStringUtils;
 import org.springframework.beans.factory.annotation.Autowired;

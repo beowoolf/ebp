@@ -1,4 +1,4 @@
-package pl.engineerbookplus.www.service.mail.password;
+package pl.engineerbookplus.www.model.service.password;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import pl.engineerbookplus.www.security.Encoder;

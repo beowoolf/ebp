@@ -1,4 +1,4 @@
-package pl.engineerbookplus.www.service.mail.password;
+package pl.engineerbookplus.www.model.service.password;
 
 import pl.engineerbookplus.www.model.domain.Person;
 import pl.engineerbookplus.www.model.domain.service.PersonsService;

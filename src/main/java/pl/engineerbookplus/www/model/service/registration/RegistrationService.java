@@ -1,4 +1,4 @@
-package pl.engineerbookplus.www.model.service;
+package pl.engineerbookplus.www.model.service.registration;
 
 import org.springframework.web.servlet.ModelAndView;
 import pl.engineerbookplus.www.model.dto.NewProfile;

@@ -1,4 +1,4 @@
-package pl.engineerbookplus.www.service.mail.password;
+package pl.engineerbookplus.www.model.service.password;
 
 import org.apache.commons.lang.RandomStringUtils;
 import org.springframework.stereotype.Service;
