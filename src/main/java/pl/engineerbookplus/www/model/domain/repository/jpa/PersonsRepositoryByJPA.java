@@ -6,7 +6,7 @@ import pl.engineerbookplus.www.model.domain.Person;
 import pl.engineerbookplus.www.model.domain.repository.PersonsRepository;
 import pl.engineerbookplus.www.model.repository.jpa.AbstractRepositoryByJPA;
 
-import javax.persistence.NoResultException;
+import jakarta.persistence.NoResultException;
 import java.util.List;
 
 @Repository

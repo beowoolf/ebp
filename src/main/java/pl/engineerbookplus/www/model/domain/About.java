@@ -7,8 +7,7 @@ import lombok.ToString;
 import org.hibernate.Hibernate;
 import org.springframework.data.annotation.Transient;
 
-import javax.persistence.*;
-import javax.xml.bind.annotation.XmlRootElement;
+import jakarta.persistence.*;
 import java.io.Serializable;
 import java.util.Collection;
 import java.util.Objects;
@@ -20,7 +19,6 @@ import java.util.Objects;
 @NoArgsConstructor
 @Table(catalog = "16120792_nebp", name = "abouts", uniqueConstraints = {
         @UniqueConstraint(columnNames = {"id"})})
-@XmlRootElement
 @NamedQueries({
         @NamedQuery(name = "About.findAll", query = "SELECT a FROM About a"),
         @NamedQuery(name = "About.findById", query = "SELECT a FROM About a WHERE a.id = :id"),

@@ -8,8 +8,7 @@ import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.format.annotation.DateTimeFormat;
 
-import javax.persistence.*;
-import javax.xml.bind.annotation.XmlRootElement;
+import jakarta.persistence.*;
 import java.io.Serializable;
 import java.util.Collection;
 import java.util.Date;
@@ -23,7 +22,6 @@ import java.util.Date;
         @UniqueConstraint(columnNames = {"id"}),
         @UniqueConstraint(columnNames = {"mail"}),
         @UniqueConstraint(columnNames = {"username"})})
-@XmlRootElement
 @NamedQueries({
         @NamedQuery(name = "Person.findAll", query = "SELECT p FROM Person p"),
         @NamedQuery(name = "Person.findById", query = "SELECT p FROM Person p WHERE p.id = :id"),

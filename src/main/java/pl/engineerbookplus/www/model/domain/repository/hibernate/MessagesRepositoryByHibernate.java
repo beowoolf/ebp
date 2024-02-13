@@ -19,8 +19,8 @@ public class MessagesRepositoryByHibernate
     @SuppressWarnings("unchecked")
     public List<Message> searchMessagesByInterlocutor(Person i, Person interlocutor) {
         return getSession().getNamedQuery("Message.findByInterlocutor")
-                .setString("p1", interlocutor.getId().toString())
-                .setString("p2", i.getId().toString()).list();
+                .setParameter("p1", interlocutor.getId().toString())
+                .setParameter("p2", i.getId().toString()).list();
     }
 
 }

@@ -6,8 +6,7 @@ import lombok.Setter;
 import lombok.ToString;
 import org.springframework.data.annotation.Transient;
 
-import javax.persistence.*;
-import javax.xml.bind.annotation.XmlRootElement;
+import jakarta.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -18,7 +17,6 @@ import java.util.Date;
 @NoArgsConstructor
 @Table(catalog = "16120792_nebp", name = "achievements", uniqueConstraints = {
         @UniqueConstraint(columnNames = {"id"})})
-@XmlRootElement
 @NamedQueries({
         @NamedQuery(name = "Achievement.findAll", query = "SELECT a FROM Achievement a"),
         @NamedQuery(name = "Achievement.findById", query = "SELECT a FROM Achievement a WHERE a.id = :id"),

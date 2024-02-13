@@ -18,35 +18,35 @@ public class PersonsRepositoryByHibernate
     @SuppressWarnings("unchecked")
     public Person searchPersonByUserName(String userName) {
         return (Person) getSession().getNamedQuery("Person.findByUserName")
-                .setString("userName", userName).uniqueResult();
+                .setParameter("userName", userName).uniqueResult();
     }
 
     @Override
     @SuppressWarnings("unchecked")
     public Person searchPersonByMail(String mail) {
         return (Person) getSession().getNamedQuery("Person.findByMail")
-                .setString("mail", mail).uniqueResult();
+                .setParameter("mail", mail).uniqueResult();
     }
 
     @Override
     @SuppressWarnings("unchecked")
     public List<Person> searchPersonsByLastname(String lastname) {
         return getSession().getNamedQuery("Person.findByLastname")
-                .setString("lastname", lastname).list();
+                .setParameter("lastname", lastname).list();
     }
 
     @Override
     @SuppressWarnings("unchecked")
     public List<Person> searchPersonsByFirstname(String firstname) {
         return getSession().getNamedQuery("Person.findByName")
-                .setString("name", firstname).list();
+                .setParameter("name", firstname).list();
     }
 
     @Override
     @SuppressWarnings("unchecked")
     public List<Person> searchPersonsByFullName(String arg1, String arg2) {
         return getSession().getNamedQuery("Person.findByFullName")
-                .setString("arg1", arg1).setString("arg2", arg2).list();
+                .setParameter("arg1", arg1).setParameter("arg2", arg2).list();
     }
 
 }

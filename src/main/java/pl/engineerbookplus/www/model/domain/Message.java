@@ -7,8 +7,7 @@ import lombok.ToString;
 import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import javax.persistence.*;
-import javax.xml.bind.annotation.XmlRootElement;
+import jakarta.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -20,7 +19,6 @@ import java.util.Date;
 @Document(collection = "messages")
 @Table(catalog = "16120792_nebp", name = "messages", uniqueConstraints = {
         @UniqueConstraint(columnNames = {"id"})})
-@XmlRootElement
 @NamedQueries({
         @NamedQuery(name = "Message.findAll", query = "SELECT m FROM Message m"),
         @NamedQuery(name = "Message.findById", query = "SELECT m FROM Message m WHERE m.id = :id"),
