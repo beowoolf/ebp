@@ -1,5 +1,6 @@
 package pl.engineerbookplus.www.model.domain;
 
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -7,7 +8,6 @@ import lombok.ToString;
 import org.hibernate.Hibernate;
 import org.springframework.data.annotation.Transient;
 
-import jakarta.persistence.*;
 import java.io.Serializable;
 import java.util.Collection;
 import java.util.Objects;

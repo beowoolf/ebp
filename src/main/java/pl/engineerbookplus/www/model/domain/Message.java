@@ -1,5 +1,6 @@
 package pl.engineerbookplus.www.model.domain;
 
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -7,7 +8,6 @@ import lombok.ToString;
 import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import jakarta.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 

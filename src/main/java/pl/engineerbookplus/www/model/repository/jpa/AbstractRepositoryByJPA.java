@@ -1,10 +1,10 @@
 package pl.engineerbookplus.www.model.repository.jpa;
 
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
 import org.springframework.transaction.annotation.Transactional;
 import pl.engineerbookplus.www.model.repository.Repository;
 
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.PersistenceContext;
 import java.io.Serializable;
 import java.lang.reflect.ParameterizedType;
 import java.util.List;
